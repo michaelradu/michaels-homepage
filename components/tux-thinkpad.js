@@ -12,7 +12,7 @@ const TuxThinkpad = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlTuxGLB = (process.env.NODE_ENV === 'production' ? ('https://michaelradu.netlify.app' || 'https://mihairadu.cf') : '') + '/tux-thinkpad.glb'
+  const urlTuxGLB = (process.env.NODE_ENV === 'production' ? 'https://michaelradu.netlify.app' : '') + '/tux-thinkpad.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
