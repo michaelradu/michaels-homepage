@@ -1,0 +1,11 @@
+[[headers]]
+  for = "https://mihairadu.cf/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "https://mihairadu.cf"
+    Access-Control-Allow-Headers = "Origin, X-Requested-With, Content-Type, Accept"
+
+[[headers]]
+  for = "https://michaelradu.netlify.app/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "https://mihairadu.cf"
+    Access-Control-Allow-Headers = "Origin, X-Requested-With, Content-Type, Accept"
