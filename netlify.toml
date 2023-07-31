@@ -1,11 +1,11 @@
-[[headers]]
-  for = "https://mihairadu.cf/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "https://mihairadu.cf"
-    Access-Control-Allow-Headers = "Origin, X-Requested-With, Content-Type, Accept"
+[[redirects]]
+  from = "/tux-thinkpad.glb"
+  to = "https://michaelradu.netlify.app/tux-thinkpad.glb"
+  status = 200
+  force = true
+  headers = { X-From = "Netlify" }
 
 [[headers]]
-  for = "https://michaelradu.netlify.app/*"
-    [headers.values]
+  for = "/*"
+  [headers.values]
     Access-Control-Allow-Origin = "https://mihairadu.cf"
-    Access-Control-Allow-Headers = "Origin, X-Requested-With, Content-Type, Accept"
