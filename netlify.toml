@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "/tux-thinkpad.glb"
-  to = "https://michaelradu.netlify.app/tux-thinkpad.glb"
+  from = "/static/files/tux-thinkpad.glb"
+  to = "https://michaelradu.netlify.app/static/files/tux-thinkpad.glb"
   status = 200
   force = true
   headers = { X-From = "Netlify" }

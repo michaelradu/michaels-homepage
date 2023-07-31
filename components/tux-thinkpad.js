@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
 import { TuxSpinner, TuxContainer } from './tux-thinkpad-loader'
+import TuxGLB from '../public/tux-thinkpad.glb'
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -12,7 +13,8 @@ const TuxThinkpad = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlTuxGLB = (process.env.NODE_ENV === 'production' ? 'https://michaelradu.netlify.app' : '') + '/tux-thinkpad.glb'
+  // const urlTuxGLB = (process.env.NODE_ENV === 'production' ? 'https://michaelradu.netlify.app' : '') + '/tux-thinkpad.glb'
+  const urlTuxGLB = TuxGLB
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
